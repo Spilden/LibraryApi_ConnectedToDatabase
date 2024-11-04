@@ -31,3 +31,4 @@
 /Users/rejwanraouf/dev/emne7/LibraryApi/obj/Debug/net8.0/LibraryApi.pdb
 /Users/rejwanraouf/dev/emne7/LibraryApi/obj/Debug/net8.0/LibraryApi.genruntimeconfig.cache
 /Users/rejwanraouf/dev/emne7/LibraryApi/obj/Debug/net8.0/ref/LibraryApi.dll
+/Users/rejwanraouf/dev/emne7/LibraryApi/obj/Debug/net8.0/LibraryApi.sourcelink.json

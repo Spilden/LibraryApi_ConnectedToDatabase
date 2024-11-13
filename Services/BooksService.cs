@@ -11,7 +11,7 @@ public class BooksService : IBooksService
 
     public IEnumerable<Book> GetBooks() => books;
 
-    public Book? GetBookById(int id) => books.FirstOrDefault(b => b.Id == id) ?? new Book();
+    public Book? GetBookById(int id) => books.FirstOrDefault(b => b.Id == id);
 
     public void AddBook(Book book)
     {

@@ -1,5 +1,6 @@
 
 using LibraryApi.Models;
+using Serilog;
 
 public class BooksService : IBooksService
 {
@@ -17,6 +18,7 @@ public class BooksService : IBooksService
     {
         book.Id = books.Max(b => b.Id) + 1; // Genererer ny Id basert på maks id fra books
         books.Add(book);
+        Log.Information($"Book {book.Title} added");
     }
 
     public void UpdateBook(int id, Book updatedBook)
@@ -27,6 +29,7 @@ public class BooksService : IBooksService
         book.Title = updatedBook.Title;
         book.Author = updatedBook.Author;
         book.Year = updatedBook.Year;
+        Log.Information($"The Book {book.Title} is updated");
     }
 
     public void DeleteBook(int id)
